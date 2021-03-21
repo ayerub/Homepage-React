@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Welcome from './components/Welcome'
+import Clock from './components/Clock'
+import Links from './components/Links'
+import { Container, Grid } from 'semantic-ui-react'
 
 function App() {
+  const user = 'Alex'
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='background'>
+      <Container>
+        <Grid centered columns='one'>
+          <Grid.Row className='mt-1 p-0'>
+            <Welcome name={user} />
+          </Grid.Row>
+          <Grid.Row className='mb'>
+            <Clock />
+          </Grid.Row>
+        </Grid>
+        <Links />
+      </Container>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
