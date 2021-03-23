@@ -9,6 +9,18 @@ body {
   background-size: cover;
 }
 
+.flexbox {
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  width: 150px;
+  margin: 10px 0;
+}
+
 .text-white {
   color: whitesmoke;
 }
