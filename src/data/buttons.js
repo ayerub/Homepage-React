@@ -24,28 +24,29 @@ const buttons = [
     href: 'https://mail.google.com/mail/u/0/#inbox',
   },
   {
+    siteName: 'Webull',
+    icon: 'chart line',
+    color: 'blue',
+    href: 'https://app.webull.com/watch',
+  },
+
+  {
+    siteName: 'Spotify',
+    icon: 'spotify',
+    color: 'green',
+    href: 'https://open.spotify.com/',
+  },
+  {
     siteName: 'Github',
     icon: 'github alternate',
     color: null,
     href: 'https://github.com',
   },
   {
-    siteName: 'Webull',
-    icon: 'chart line',
-    color: 'blue',
-    href: 'https://app.webull.com/watch',
-  },
-  {
     siteName: 'Gmap',
     icon: 'map marker alternate',
     color: 'yellow',
     href: 'https://www.google.com/maps/',
-  },
-  {
-    siteName: 'Spotify',
-    icon: 'spotify',
-    color: 'green',
-    href: 'https://open.spotify.com/',
   },
 ]
 
