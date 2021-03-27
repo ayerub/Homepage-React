@@ -10,14 +10,14 @@ body {
 }
 
 .flexbox {
-  padding: 0 200px;
+  padding: 0 300px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .flex-item {
-  width: 150px;
+  width: 120px;
   margin: 10px 0;
 }
 
@@ -68,11 +68,15 @@ body {
 }
 
 /* FONT SIZE */
-.font-m {
-  font-size: 3em;
+.font-s {
+  font-size: 2em;
 }
+.font-m {
+  font-size: 4em;
+}
+
 .font-l {
-  font-size: 5em;
+  font-size: 6em;
 }
 
 .font-xl {
@@ -82,4 +86,72 @@ body {
 /* WIDTH */
 .w-4 {
   width: 400px;
+}
+
+@media (max-width: 1199px) {
+  .flexbox {
+    padding: 0 200px;
+  }
+}
+
+@media (max-width: 991px) {
+  .flexbox {
+    padding: 0 100px;
+  }
+
+  .font-l {
+    font-size: 5em;
+  }
+
+  .font-s {
+    font-size: 1.5em;
+  }
+
+  .mt-1 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 770px) {
+  .flexbox {
+    padding: 0 75px;
+  }
+
+  .mt-1 {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 680px) {
+  .flexbox {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .flexbox {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 570px) {
+  .flexbox {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 490px) {
+  .flexbox {
+    padding: 0 75px;
+  }
+}
+
+@media (max-width: 415px) {
+  .flexbox {
+    padding: 0 25px;
+  }
+
+  .font-l {
+    font-size: 4em;
+  }
 }

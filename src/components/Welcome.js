@@ -27,7 +27,7 @@ const Welcome = ({ name }) => {
     }
   }, [hour, name, date, message])
 
-  return <h1 className='text-white font-m mt-5'>{message}</h1>
+  return <h1 className='text-white font-s'>{message}</h1>
 }
 
 export default Welcome

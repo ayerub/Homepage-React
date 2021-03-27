@@ -9,7 +9,12 @@ const Links = () => {
         return (
           <div key={index}>
             <a href={button.href}>
-              <Button className='flex-item' color={button.color} size='large'>
+              <Button
+                className='flex-item'
+                color={button.color}
+                size='small'
+                circular
+              >
                 <Icon name={button.icon} />
                 {button.siteName}
               </Button>

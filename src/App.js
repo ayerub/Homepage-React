@@ -12,14 +12,16 @@ function App() {
     <div className='background'>
       <Container>
         <Grid centered columns='one'>
-          <Grid.Row className='mt-1 p-0'>
-            <Welcome name={user} />
-          </Grid.Row>
-          <Grid.Row className='mb'>
+          <Grid.Row className='mt-1' style={{ padding: '0px' }}>
             <Clock />
           </Grid.Row>
+          <Grid.Row className='mb p-0' style={{ padding: '0px' }}>
+            <Welcome name={user} />
+          </Grid.Row>
+          <Grid.Row>
+            <Links />
+          </Grid.Row>
         </Grid>
-        <Links />
       </Container>
     </div>
   )

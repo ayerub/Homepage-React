@@ -16,7 +16,7 @@ const Clock = () => {
   }
 
   return (
-    <h1 className='text-white font-xl'>
+    <h1 className='text-white font-l'>
       {time.toLocaleTimeString([], {
         hour: 'numeric',
         minute: '2-digit',
